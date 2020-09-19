@@ -9,7 +9,7 @@ SELECT
   passenger_count AS passengers,
   (tolls_amount + fare_amount ) AS fare_amount
 FROM
-  `qwiklabs-gcp-02-ee31efd0e482.taxirides.historical_taxi_rides_raw`  #replace with your gcp project id
+  `<PROJECT_ID>.taxirides.historical_taxi_rides_raw`  #replace with your gcp project id
 WHERE
   trip_distance>0
   AND fare_amount>=2.5
